@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-bg-color: #fff;
+    --main-text-color: #3c4043;
+    --secondary-bg-color: #f2f2f2;
+    --secondary-text-color: #70757a;
+}
+
+.text-dark {
+    color: var(--main-text-color) !important;
+}
+
+.text-light {
+    color: var(--secondary-text-color)  !important;
+}
+
+.border-light {
+    border-color: #dadce0 !important;
+}
+
+.bg-dark {
+    background-color: var(--secondary-bg-color)  !important;
+}
+
+.bg-light {
+    background-color: #f2f2f2 !important;
+}
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: none !important;;
+  border: none !important;;
+  outline: none !important;
+}
