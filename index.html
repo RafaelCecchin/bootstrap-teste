@@ -5,52 +5,62 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
+        <!-- BOOTSTRAP -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+        
         <link rel="stylesheet" href="./css/style.css"/>
     </head>
     <body class="d-flex flex-column vh-100">
-        <div class="container-fluid d-flex flex-column vh-100 overflow-hidden">
-            <div class="row h-100">
+        <div class="container-fluid d-flex flex-column min-vh-100">
+            <div class="row">
+                <div class="col">
+                    <div class="float-right py-3 ">
+                        <a href="#" class="text-dark">Gmail</a>
+                        <a href="#" class="text-dark ml-2">Imagens</a>
+                        <button class="bg-white border-0 rounded-circle p-2 ml-2 btn-apps">
+                            <img alt="" width="24" height="24" src="./img/options.svg"/>
+                        </button>
+                        <a href="#" class="btn btn-primary ml-2">Fazer login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-4 h-100">
                 <div class="col d-flex flex-column justify-content-center">
-                    <div class="row py-3">
-                        <img class="m-auto" width="500" height="200" src="./img/google-end-of-year.gif"/>
+                    <div class="row mx-auto mb-4">
+                        <img class="m-auto mw-90 w-auto" width="300" height="151" src="./img/google-end-of-year.gif"/>
                     </div>
-                    <div clas="row py-3">
-                        <div class="col">
+                    <form action="#">
+                        <div class="form-group w-90 m-auto border border-light p-2 rounded-pill d-flex flex-nowrap search-bar-container">
 
-                            <div class="row w-50 m-auto border border-light p-2 rounded-pill">
-                                <div class="col-sm-auto px-3">
-                                    <img width="20" height="20" src="img/search.svg"/>
-                                </div>
-                                <div class="col p-0">
-                                    <input class="w-100 border-0 shadow-none" type="text"/>
-                                    
-                                </div>
-                                <div class="col-sm-auto px-1 d-flex align-items-center">
-                                    <div class="pr-2 border-right border-light">
-                                        <img width="24" height="24" src="img/cross.svg"/>
-                                    </div>
-                                    <div class="px-1">
-                                        <img class="mx-2" width="19" height="11" src="img/keyboard.png"/>
-                                    </div>
-                                    <div class="px-1">
-                                        <img width="24" height="24" src="img/mic.svg"/>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                            <button class="px-1 bg-white">
+                                <img width="20" height="20" src="img/search.svg"/>
+                            </button>
+
+                            <input class="w-100 border-0 shadow-none search-bar" type="text"/>
+
+                            <button class="pr-2 bg-white border-right border-light btn-cls d-none">
+                                <img width="24" height="24" src="img/cross.svg"/>
+                            </button>
+
+                            <button class="px-1 bg-white">
+                                <img class="mx-2" width="19" height="11" src="img/keyboard.png"/>
+                            </button>
+
+                            <button class="px-1 bg-white">
+                                <img width="24" height="24" src="img/mic.svg"/>
+                            </button>
                         </div>
-                    </div>
-                    <div clas="row py-3">
-
-                    </div>
-                    <div clas="row py-3">
-
+                        <div class="form-group mt-4 d-flex justify-content-center">
+                            <input class="btn border-0 btn-light mx-2" type="submit" value="Pesquisa Google"/>
+                            <input class="btn border-0 btn-light mx-2" type="submit" value="Estou com sorte"/>
+                        </div>
+                    </form>
+                    <div class="row mx-auto mt-4">
+                        <p class="text-center">Disponibilizado pelo Google em: <a href="#">English</a></p>
                     </div>
                 </div>
             </div>
@@ -73,5 +83,7 @@
                 </div>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
